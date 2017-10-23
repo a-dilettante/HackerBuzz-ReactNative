@@ -1,0 +1,23 @@
+//
+//  HackerNewsReader-Prefix.pch
+//  HackerNewsReader
+//
+//  Created by Rafal Ciesielczuk on 20/09/2017.
+//  Copyright © 2017 Facebook. All rights reserved.
+//
+
+#ifndef HackerNewsReader_Prefix_pch
+#define HackerNewsReader_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+
+#endif /* HackerNewsReader_Prefix_pch */

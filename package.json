@@ -1,0 +1,67 @@
+{
+  "name": "HackerBuzz",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle-ios": "react-native bundle --platform ios --entry-file index.ios.js --bundle-output ./main.jsbundle --assets-dest ./release --dev false",
+    "bundle-android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
+    "test": "jest",
+    "lint-fix": "eslint --fix js/",
+    "postinstall": "rndebugger-open"
+  },
+  "jest": {
+    "preset": "react-native",
+    "collectCoverage": true,
+    "verbose": true,
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-navigation|rn-placeholder)"
+    ]
+  },
+  "dependencies": {
+    "es6-promise": "^4.1.1",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.44.1",
+    "react-native-collapsible": "^0.8.0",
+    "react-native-dropdownalert": "^2.11.0",
+    "react-native-htmlview": "0.10.0",
+    "react-native-modal": "^3.1.0",
+    "react-native-progress": "^3.2.0",
+    "react-native-safari-view": "^2.0.0",
+    "react-native-scrollable-tab-view": "^0.7.0",
+    "react-native-share": "^1.0.20",
+    "react-native-swipeable": "^0.6.0",
+    "react-native-vector-icons": "^4.1.1",
+    "react-navigation": "1.0.0-beta.11",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.1",
+    "redux-persist": "^4.9.1",
+    "redux-thunk": "^2.2.0",
+    "rn-placeholder": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^19.0.0",
+    "babel-plugin-rewire": "^1.1.0",
+    "babel-preset-react-native": "^1.9.1",
+    "chai": "^4.1.2",
+    "enzyme": "^2.8.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-react-native": "^2.3.2",
+    "jest": "19.0.2",
+    "nock": "^9.0.24",
+    "react-native-debugger-open": "^0.3.11",
+    "react-test-renderer": "16.0.0-alpha.6",
+    "redux-mock-store": "^1.2.3"
+  }
+}
