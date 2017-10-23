@@ -70,7 +70,6 @@ Feel free to submit issues and enhancement requests.
 3. Commit changes to your own branch
 4. Push your work back up to your fork
 5. Submit a Pull request so that we can review your changes
-6. Distributed under the MIT license. See LICENSE for more information.
 
 ### License
 
