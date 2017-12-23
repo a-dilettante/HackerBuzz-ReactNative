@@ -6,13 +6,23 @@ import configureStore from './store/configureStore';
 
 import Router from './containers/Router';
 
+let store = null;
+
 export class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isLoading: true,
-      store: configureStore(() => this.setState({ isLoading: false }))
-    };
+    if (store === null) {
+      store = configureStore(() => this.setState({isLoading: false}));
+      this.state = {
+        isLoading: true,
+        store
+      }; 
+	} else {
+      this.state = {
+        isLoading: false,
+        store
+      };
+    }
   }
 
   render() {
